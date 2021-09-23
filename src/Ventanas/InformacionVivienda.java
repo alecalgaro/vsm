@@ -89,48 +89,43 @@ public class InformacionVivienda extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jLabel_titulo = new javax.swing.JLabel();
-        txt_orientacion = new javax.swing.JTextField();
         jLabel_orientacion = new javax.swing.JLabel();
         jLabel_sala_de_estar = new javax.swing.JLabel();
-        txt_sala_de_estar = new javax.swing.JTextField();
         jLabel_hab_doble = new javax.swing.JLabel();
-        txt_hab_doble = new javax.swing.JTextField();
         jLabel_local_comercial = new javax.swing.JLabel();
-        txt_local_comercial = new javax.swing.JTextField();
         jLabel_largo = new javax.swing.JLabel();
         txt_largo_terreno = new javax.swing.JTextField();
         jLabel_comedor = new javax.swing.JLabel();
-        txt_comedor = new javax.swing.JTextField();
         jLabel_hab_simple = new javax.swing.JLabel();
-        txt_hab_simple = new javax.swing.JTextField();
         jLabel_hab_matrimonial = new javax.swing.JLabel();
-        txt_hab_matrimonial = new javax.swing.JTextField();
         jLabel_ancho = new javax.swing.JLabel();
         txt_ancho_terreno = new javax.swing.JTextField();
         jLabel_baño_lav_coc = new javax.swing.JLabel();
-        txt_baño_lav_coc = new javax.swing.JTextField();
         jLabel_sala_de_estudio = new javax.swing.JLabel();
-        txt_sala_de_estudio = new javax.swing.JTextField();
         jLabel_deposito = new javax.swing.JLabel();
-        txt_deposito = new javax.swing.JTextField();
         jLabel_taller = new javax.swing.JLabel();
-        txt_taller = new javax.swing.JTextField();
         jButton_crearDiseño = new javax.swing.JButton();
         jButton_eliminarVivienda = new javax.swing.JButton();
         jButton_actualizarVivienda = new javax.swing.JButton();
         jButton_generarReporteCompleto = new javax.swing.JButton();
         jLabel_titulo1 = new javax.swing.JLabel();
-        jLabel_orientacion1 = new javax.swing.JLabel();
-        jLabel_orientacion2 = new javax.swing.JLabel();
         jLabel_cubierta = new javax.swing.JLabel();
-        txt_cubierta = new javax.swing.JTextField();
-        jLabel_cub = new javax.swing.JLabel();
-        jLabel_pi = new javax.swing.JLabel();
-        txt_piso = new javax.swing.JTextField();
         jLabel_piso = new javax.swing.JLabel();
         jLabel_terminacion = new javax.swing.JLabel();
-        txt_terminacion = new javax.swing.JTextField();
-        jLabel_term = new javax.swing.JLabel();
+        cb_orientacion = new javax.swing.JComboBox<>();
+        cb_cubierta = new javax.swing.JComboBox<>();
+        cb_piso = new javax.swing.JComboBox<>();
+        cb_terminacion = new javax.swing.JComboBox<>();
+        cb_local_comercial = new javax.swing.JComboBox<>();
+        cb_comedor = new javax.swing.JComboBox<>();
+        cb_hab_matrimonial = new javax.swing.JComboBox<>();
+        cb_hab_simple = new javax.swing.JComboBox<>();
+        cb_deposito = new javax.swing.JComboBox<>();
+        cb_taller = new javax.swing.JComboBox<>();
+        cb_sala_estudio = new javax.swing.JComboBox<>();
+        cb_hab_doble = new javax.swing.JComboBox<>();
+        cb_baño_lav_coc = new javax.swing.JComboBox<>();
+        cb_sala_estar = new javax.swing.JComboBox<>();
         jLabel_informacionVivienda = new javax.swing.JLabel();
 
         jButton1.setText("jButton1");
@@ -148,18 +143,6 @@ public class InformacionVivienda extends javax.swing.JFrame {
         jLabel_titulo.setText("Módulos");
         getContentPane().add(jLabel_titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, -1));
 
-        txt_orientacion.setBackground(new java.awt.Color(92, 124, 203));
-        txt_orientacion.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_orientacion.setForeground(new java.awt.Color(255, 255, 255));
-        txt_orientacion.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_orientacion.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_orientacion.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_orientacionKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_orientacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 30, 25));
-
         jLabel_orientacion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_orientacion.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_orientacion.setText("Orientación:");
@@ -168,62 +151,25 @@ public class InformacionVivienda extends javax.swing.JFrame {
         jLabel_sala_de_estar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_sala_de_estar.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_sala_de_estar.setText("Sala de estar:");
-        getContentPane().add(jLabel_sala_de_estar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, -1));
-
-        txt_sala_de_estar.setBackground(new java.awt.Color(92, 124, 203));
-        txt_sala_de_estar.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_sala_de_estar.setForeground(new java.awt.Color(255, 255, 255));
-        txt_sala_de_estar.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_sala_de_estar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_sala_de_estar.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_sala_de_estarKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_sala_de_estar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 30, 25));
+        getContentPane().add(jLabel_sala_de_estar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
 
         jLabel_hab_doble.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_hab_doble.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_hab_doble.setText("Hab. doble:");
-        getContentPane().add(jLabel_hab_doble, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 340, -1, -1));
-
-        txt_hab_doble.setBackground(new java.awt.Color(92, 124, 203));
-        txt_hab_doble.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_hab_doble.setForeground(new java.awt.Color(255, 255, 255));
-        txt_hab_doble.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_hab_doble.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_hab_doble.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_hab_dobleKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_hab_doble, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 30, 25));
+        getContentPane().add(jLabel_hab_doble, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, -1, -1));
 
         jLabel_local_comercial.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_local_comercial.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_local_comercial.setText("Local comercial:");
         getContentPane().add(jLabel_local_comercial, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
 
-        txt_local_comercial.setBackground(new java.awt.Color(92, 124, 203));
-        txt_local_comercial.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_local_comercial.setForeground(new java.awt.Color(255, 255, 255));
-        txt_local_comercial.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_local_comercial.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_local_comercial.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_local_comercialKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_local_comercial, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 30, 25));
-
         jLabel_largo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_largo.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_largo.setText("Largo terreno:");
         getContentPane().add(jLabel_largo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
-        txt_largo_terreno.setBackground(new java.awt.Color(92, 124, 203));
         txt_largo_terreno.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_largo_terreno.setForeground(new java.awt.Color(255, 255, 255));
+        txt_largo_terreno.setForeground(new java.awt.Color(100, 100, 100));
         txt_largo_terreno.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_largo_terreno.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txt_largo_terreno.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -236,62 +182,25 @@ public class InformacionVivienda extends javax.swing.JFrame {
         jLabel_comedor.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_comedor.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_comedor.setText("Comedor:");
-        getContentPane().add(jLabel_comedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, -1, -1));
-
-        txt_comedor.setBackground(new java.awt.Color(92, 124, 203));
-        txt_comedor.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_comedor.setForeground(new java.awt.Color(255, 255, 255));
-        txt_comedor.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_comedor.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_comedor.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_comedorKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_comedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 30, 25));
+        getContentPane().add(jLabel_comedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 290, -1, -1));
 
         jLabel_hab_simple.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_hab_simple.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_hab_simple.setText("Hab. simple:");
-        getContentPane().add(jLabel_hab_simple, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, -1, -1));
-
-        txt_hab_simple.setBackground(new java.awt.Color(92, 124, 203));
-        txt_hab_simple.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_hab_simple.setForeground(new java.awt.Color(255, 255, 255));
-        txt_hab_simple.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_hab_simple.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_hab_simple.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_hab_simpleKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_hab_simple, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 30, 25));
+        getContentPane().add(jLabel_hab_simple, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, -1, -1));
 
         jLabel_hab_matrimonial.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_hab_matrimonial.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_hab_matrimonial.setText("Hab. matri:");
-        getContentPane().add(jLabel_hab_matrimonial, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, -1, -1));
-
-        txt_hab_matrimonial.setBackground(new java.awt.Color(92, 124, 203));
-        txt_hab_matrimonial.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_hab_matrimonial.setForeground(new java.awt.Color(255, 255, 255));
-        txt_hab_matrimonial.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_hab_matrimonial.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_hab_matrimonial.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_hab_matrimonialKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_hab_matrimonial, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, 30, 25));
+        getContentPane().add(jLabel_hab_matrimonial, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, -1, -1));
 
         jLabel_ancho.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_ancho.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_ancho.setText("Ancho terreno:");
         getContentPane().add(jLabel_ancho, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
 
-        txt_ancho_terreno.setBackground(new java.awt.Color(92, 124, 203));
         txt_ancho_terreno.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_ancho_terreno.setForeground(new java.awt.Color(255, 255, 255));
+        txt_ancho_terreno.setForeground(new java.awt.Color(100, 100, 100));
         txt_ancho_terreno.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_ancho_terreno.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txt_ancho_terreno.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -304,65 +213,22 @@ public class InformacionVivienda extends javax.swing.JFrame {
         jLabel_baño_lav_coc.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_baño_lav_coc.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_baño_lav_coc.setText("Baño, lav, coc:");
-        getContentPane().add(jLabel_baño_lav_coc, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, -1, -1));
-
-        txt_baño_lav_coc.setBackground(new java.awt.Color(92, 124, 203));
-        txt_baño_lav_coc.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_baño_lav_coc.setForeground(new java.awt.Color(255, 255, 255));
-        txt_baño_lav_coc.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_baño_lav_coc.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(txt_baño_lav_coc, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 30, 25));
+        getContentPane().add(jLabel_baño_lav_coc, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 340, -1, -1));
 
         jLabel_sala_de_estudio.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_sala_de_estudio.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_sala_de_estudio.setText("Sala estudio:");
-        getContentPane().add(jLabel_sala_de_estudio, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, -1, -1));
-
-        txt_sala_de_estudio.setBackground(new java.awt.Color(92, 124, 203));
-        txt_sala_de_estudio.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_sala_de_estudio.setForeground(new java.awt.Color(255, 255, 255));
-        txt_sala_de_estudio.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_sala_de_estudio.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_sala_de_estudio.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_sala_de_estudioKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_sala_de_estudio, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, 30, 25));
+        getContentPane().add(jLabel_sala_de_estudio, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, -1, -1));
 
         jLabel_deposito.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_deposito.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_deposito.setText("Deposito:");
-        getContentPane().add(jLabel_deposito, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, -1, -1));
-
-        txt_deposito.setBackground(new java.awt.Color(92, 124, 203));
-        txt_deposito.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_deposito.setForeground(new java.awt.Color(255, 255, 255));
-        txt_deposito.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_deposito.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_deposito.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_depositoKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_deposito, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, 30, 25));
+        getContentPane().add(jLabel_deposito, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 290, -1, -1));
 
         jLabel_taller.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_taller.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_taller.setText("Taller:");
-        getContentPane().add(jLabel_taller, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 340, -1, -1));
-
-        txt_taller.setBackground(new java.awt.Color(92, 124, 203));
-        txt_taller.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_taller.setForeground(new java.awt.Color(255, 255, 255));
-        txt_taller.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_taller.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_taller.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_tallerKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_taller, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 330, 30, 25));
+        getContentPane().add(jLabel_taller, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 340, -1, -1));
 
         jButton_crearDiseño.setBackground(new java.awt.Color(64, 97, 164));
         jButton_crearDiseño.setFont(new java.awt.Font("Arial Narrow", 0, 16)); // NOI18N
@@ -417,54 +283,10 @@ public class InformacionVivienda extends javax.swing.JFrame {
         jLabel_titulo1.setText("Información de la vivienda");
         getContentPane().add(jLabel_titulo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
 
-        jLabel_orientacion1.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        jLabel_orientacion1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_orientacion1.setText("\"NE\", \"NO\", \"SE\", \"SO\")");
-        getContentPane().add(jLabel_orientacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, -1, -1));
-
-        jLabel_orientacion2.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        jLabel_orientacion2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_orientacion2.setText("(\"N\", \"S\", \"E\", \"O\"");
-        getContentPane().add(jLabel_orientacion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, -1, -1));
-
         jLabel_cubierta.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_cubierta.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_cubierta.setText("Cubierta:");
         getContentPane().add(jLabel_cubierta, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, -1, -1));
-
-        txt_cubierta.setBackground(new java.awt.Color(92, 124, 203));
-        txt_cubierta.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_cubierta.setForeground(new java.awt.Color(255, 255, 255));
-        txt_cubierta.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_cubierta.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_cubierta.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_cubiertaKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_cubierta, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 30, 25));
-
-        jLabel_cub.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel_cub.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_cub.setText("(\"1\": un agua, \"2\": dos aguas, \"3\": plana)");
-        getContentPane().add(jLabel_cub, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, -1, -1));
-
-        jLabel_pi.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel_pi.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_pi.setText("(\"1\": sobre platea, \"2\": sobre pilotes)");
-        getContentPane().add(jLabel_pi, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 130, -1, -1));
-
-        txt_piso.setBackground(new java.awt.Color(92, 124, 203));
-        txt_piso.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_piso.setForeground(new java.awt.Color(255, 255, 255));
-        txt_piso.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_piso.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_piso.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_pisoKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txt_piso, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 120, 30, 25));
 
         jLabel_piso.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel_piso.setForeground(new java.awt.Color(255, 255, 255));
@@ -476,22 +298,122 @@ public class InformacionVivienda extends javax.swing.JFrame {
         jLabel_terminacion.setText("Terminación:");
         getContentPane().add(jLabel_terminacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, -1, -1));
 
-        txt_terminacion.setBackground(new java.awt.Color(92, 124, 203));
-        txt_terminacion.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txt_terminacion.setForeground(new java.awt.Color(255, 255, 255));
-        txt_terminacion.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_terminacion.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txt_terminacion.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_terminacionKeyTyped(evt);
+        cb_orientacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "N", "S", "E", "O", "NE", "NO", "SE", "SO" }));
+        getContentPane().add(cb_orientacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
+
+        cb_cubierta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Un agua", "Dos aguas", "Plana" }));
+        cb_cubierta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_cubiertaActionPerformed(evt);
             }
         });
-        getContentPane().add(txt_terminacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, 30, 25));
+        getContentPane().add(cb_cubierta, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 100, -1));
 
-        jLabel_term.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel_term.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_term.setText("(\"1\": placa cementicia, \"2\": tablas madera)");
-        getContentPane().add(jLabel_term, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 180, -1, -1));
+        cb_piso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sobre platea", "Sobre pilotes" }));
+        getContentPane().add(cb_piso, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 120, 110, -1));
+
+        cb_terminacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Placa cementicia", "Tablas de madera" }));
+        getContentPane().add(cb_terminacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, 150, -1));
+
+        cb_local_comercial.setBackground(new java.awt.Color(92, 124, 203));
+        cb_local_comercial.setEditable(true);
+        cb_local_comercial.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_local_comercial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_local_comercialActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_local_comercial, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 45, -1));
+
+        cb_comedor.setBackground(new java.awt.Color(92, 124, 203));
+        cb_comedor.setEditable(true);
+        cb_comedor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_comedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_comedorActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_comedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 280, 45, -1));
+
+        cb_hab_matrimonial.setBackground(new java.awt.Color(92, 124, 203));
+        cb_hab_matrimonial.setEditable(true);
+        cb_hab_matrimonial.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_hab_matrimonial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_hab_matrimonialActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_hab_matrimonial, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 280, 45, -1));
+
+        cb_hab_simple.setBackground(new java.awt.Color(92, 124, 203));
+        cb_hab_simple.setEditable(true);
+        cb_hab_simple.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_hab_simple.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_hab_simpleActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_hab_simple, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 280, 45, -1));
+
+        cb_deposito.setBackground(new java.awt.Color(92, 124, 203));
+        cb_deposito.setEditable(true);
+        cb_deposito.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_deposito.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_depositoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_deposito, new org.netbeans.lib.awtextra.AbsoluteConstraints(715, 280, 45, -1));
+
+        cb_taller.setBackground(new java.awt.Color(92, 124, 203));
+        cb_taller.setEditable(true);
+        cb_taller.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_taller.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_tallerActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_taller, new org.netbeans.lib.awtextra.AbsoluteConstraints(715, 330, 45, -1));
+
+        cb_sala_estudio.setBackground(new java.awt.Color(92, 124, 203));
+        cb_sala_estudio.setEditable(true);
+        cb_sala_estudio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_sala_estudio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_sala_estudioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_sala_estudio, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 330, 45, -1));
+
+        cb_hab_doble.setBackground(new java.awt.Color(92, 124, 203));
+        cb_hab_doble.setEditable(true);
+        cb_hab_doble.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_hab_doble.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_hab_dobleActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_hab_doble, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 45, -1));
+
+        cb_baño_lav_coc.setBackground(new java.awt.Color(92, 124, 203));
+        cb_baño_lav_coc.setEditable(true);
+        cb_baño_lav_coc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_baño_lav_coc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_baño_lav_cocActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_baño_lav_coc, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 330, 45, -1));
+
+        cb_sala_estar.setBackground(new java.awt.Color(92, 124, 203));
+        cb_sala_estar.setEditable(true);
+        cb_sala_estar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
+        cb_sala_estar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_sala_estarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cb_sala_estar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 45, -1));
         getContentPane().add(jLabel_informacionVivienda, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 460));
 
         pack();
@@ -501,7 +423,7 @@ public class InformacionVivienda extends javax.swing.JFrame {
         FileWriter flwriter = null;
             try {
 		//Crea el flujo para escribir en el archivo
-		flwriter = new FileWriter("C:\\Users\\aleja\\Desktop\\VSM\\archivo.txt");
+		flwriter = new FileWriter("C:\\Users\\aleja\\Desktop\\Proyectos\\VSM\\archivo.txt");
 		//Crea un buffer o flujo intermedio antes de escribir directamente en el archivo
 		BufferedWriter bfwriter = new BufferedWriter(flwriter);
                     //Escribe los datos en el archivo. Primero escribo las caracteristicas de la vivienda y luego
@@ -598,32 +520,26 @@ public class InformacionVivienda extends javax.swing.JFrame {
         */
         
         //Para recuperar la información escrita luego de presionar el botón "Actualizar":
-        act_orientacion = txt_orientacion.getText().trim();
+        //act_orientacion = txt_orientacion.getText().trim();
+        act_orientacion = cb_orientacion.getSelectedItem().toString();
         act_largo_terreno = txt_largo_terreno.getText().trim();
         act_ancho_terreno = txt_ancho_terreno.getText().trim();
-        act_cubierta = txt_cubierta.getText().trim();
-        act_piso = txt_piso.getText().trim();
-        act_terminacion = txt_terminacion.getText().trim();
-        act_local_comercial = txt_local_comercial.getText().trim();
-        act_sala_de_estar = txt_sala_de_estar.getText().trim();
-        act_comedor = txt_comedor.getText().trim();
-        act_baño_lav_coc = txt_baño_lav_coc.getText().trim();
-        act_hab_matrimonial = txt_hab_matrimonial.getText().trim();
-        act_hab_doble = txt_hab_doble.getText().trim();
-        act_hab_simple = txt_hab_simple.getText().trim();
-        act_sala_de_estudio = txt_sala_de_estudio.getText().trim();
-        act_deposito = txt_deposito.getText().trim();
-        act_taller = txt_taller.getText().trim();
+        act_cubierta = Integer.toString(cb_cubierta.getSelectedIndex() + 1);    
+        act_piso = Integer.toString(cb_piso.getSelectedIndex() + 1);
+        act_terminacion = Integer.toString(cb_terminacion.getSelectedIndex() + 1);
+        act_local_comercial = cb_local_comercial.getSelectedItem().toString();
+        act_sala_de_estar = cb_sala_estar.getSelectedItem().toString();
+        act_comedor = cb_comedor.getSelectedItem().toString();
+        act_baño_lav_coc = cb_baño_lav_coc.getSelectedItem().toString();
+        act_hab_matrimonial = cb_hab_matrimonial.getSelectedItem().toString();
+        act_hab_doble = cb_hab_doble.getSelectedItem().toString();
+        act_hab_simple = cb_hab_simple.getSelectedItem().toString();
+        act_sala_de_estudio = cb_sala_estudio.getSelectedItem().toString();
+        act_deposito = cb_deposito.getSelectedItem().toString();   
+        act_taller = cb_taller.getSelectedItem().toString();
         
         //Validar que los campos no estén vacios:
-        if(act_orientacion.equals("")){  //"" es un espacio en blanco.
-            txt_orientacion.setBackground(Color.red);
-            validacion_vacio++;
-        } else if (!act_orientacion.equals("N") && !act_orientacion.equals("S") && !act_orientacion.equals("E") && !act_orientacion.equals("O") 
-                && !act_orientacion.equals("NE") && !act_orientacion.equals("NO") && !act_orientacion.equals("SE") && !act_orientacion.equals("SO")) {
-            txt_orientacion.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
+        
         if(act_largo_terreno.equals("")){
             txt_largo_terreno.setBackground(Color.red);
             validacion_vacio++;
@@ -631,97 +547,6 @@ public class InformacionVivienda extends javax.swing.JFrame {
         if(act_ancho_terreno.equals("")){
             txt_ancho_terreno.setBackground(Color.red);
             validacion_vacio++;
-        }
-        if(act_cubierta.equals("")){
-            txt_cubierta.setBackground(Color.red);
-            validacion_vacio++;
-        } else if(!act_cubierta.equals("1") && !act_cubierta.equals("2") && !act_cubierta.equals("3")){
-            txt_cubierta.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_piso.equals("")){
-            txt_piso.setBackground(Color.red);
-            validacion_vacio++;
-        } else if(!act_piso.equals("1") && !act_piso.equals("2")){
-            txt_piso.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_terminacion.equals("")){
-            txt_terminacion.setBackground(Color.red);
-            validacion_vacio++;
-        } else if(!act_terminacion.equals("1") && !act_terminacion.equals("2")){
-            txt_terminacion.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_local_comercial.equals("")){
-            txt_local_comercial.setBackground(Color.red);
-            validacion_vacio++;   
-        } else if ( (Integer.parseInt(act_local_comercial) < 1) && !act_local_comercial.equals("0")){
-            txt_local_comercial.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_sala_de_estar.equals("")){
-            txt_sala_de_estar.setBackground(Color.red);
-            validacion_vacio++;
-        } else if ( (Integer.parseInt(act_sala_de_estar) < 1) && !act_sala_de_estar.equals("0")){
-            txt_sala_de_estar.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_comedor.equals("")){  
-            txt_comedor.setBackground(Color.red);
-            validacion_vacio++;
-        } else if ( (Integer.parseInt(act_comedor) < 1) && !act_comedor.equals("0")){
-            txt_comedor.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_baño_lav_coc.equals("")){
-            txt_baño_lav_coc.setBackground(Color.red);
-            validacion_vacio++;
-        } else if ( (Integer.parseInt(act_baño_lav_coc) < 1) && !act_baño_lav_coc.equals("0")){
-            txt_baño_lav_coc.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_hab_matrimonial.equals("")){
-            txt_hab_matrimonial.setBackground(Color.red);
-            validacion_vacio++;
-        } else if ( (Integer.parseInt(act_hab_matrimonial) < 1) && !act_hab_matrimonial.equals("0")){
-            txt_hab_matrimonial.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_hab_doble.equals("")){
-            txt_hab_doble.setBackground(Color.red);
-            validacion_vacio++;
-        } else if ( (Integer.parseInt(act_hab_doble) < 1) && !act_hab_doble.equals("0")){
-            txt_hab_doble.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_hab_simple.equals("")){
-            txt_hab_simple.setBackground(Color.red);
-            validacion_vacio++;
-        } else if ( (Integer.parseInt(act_hab_simple) < 1) && !act_hab_simple.equals("0")){
-            txt_hab_simple.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_sala_de_estudio.equals("")){
-            txt_sala_de_estudio.setBackground(Color.red);
-            validacion_vacio++;
-        } else if ( (Integer.parseInt(act_sala_de_estudio) < 1) && !act_sala_de_estudio.equals("0")){
-            txt_sala_de_estudio.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_deposito.equals("")){
-            txt_deposito.setBackground(Color.red);
-            validacion_vacio++;
-        } else if ( (Integer.parseInt(act_deposito) < 1) && !act_deposito.equals("0")){
-            txt_deposito.setBackground(Color.red);
-            validacion_campos_correctos++;
-        }
-        if(act_taller.equals("")){
-            txt_taller.setBackground(Color.red);
-            validacion_vacio++;
-        } else if ( (Integer.parseInt(act_taller) < 1) && !act_taller.equals("0")){
-            txt_taller.setBackground(Color.red);
-            validacion_campos_correctos++;
         }
                    
         //Debo validar que todos los campos esten completos, que no se usen más módulos de los que entran en el largo del terreno y 
@@ -1007,23 +832,6 @@ public class InformacionVivienda extends javax.swing.JFrame {
                 cn.close();     //Cierra la conexión a la base de datos.
                 
                 Limpiar();  //Función escrita debajo.
-                
-                txt_orientacion.setBackground(Color.green);
-                txt_largo_terreno.setBackground(Color.green);
-                txt_ancho_terreno.setBackground(Color.green);
-                txt_cubierta.setBackground(Color.green);
-                txt_piso.setBackground(Color.green);
-                txt_terminacion.setBackground(Color.green);
-                txt_local_comercial.setBackground(Color.green);
-                txt_sala_de_estar.setBackground(Color.green);
-                txt_comedor.setBackground(Color.green);
-                txt_baño_lav_coc.setBackground(Color.green);
-                txt_hab_matrimonial.setBackground(Color.green);
-                txt_hab_doble.setBackground(Color.green);
-                txt_hab_simple.setBackground(Color.green);
-                txt_sala_de_estudio.setBackground(Color.green);
-                txt_deposito.setBackground(Color.green);
-                txt_taller.setBackground(Color.green);
                 
                 JOptionPane.showMessageDialog(null, "Actualización exitosa.");
                 this.dispose();
@@ -1481,13 +1289,6 @@ public class InformacionVivienda extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton_generarReporteCompletoActionPerformed
 
-    //Validaciones de letras y numeros:
-    
-    private void txt_orientacionKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_orientacionKeyTyped
-        char c = evt.getKeyChar();
-        if(c!='N' && c!='S' && c!='E' && c!='O') evt.consume();        //Solo se permite escribir esas cuatro letras.
-    }//GEN-LAST:event_txt_orientacionKeyTyped
-
     private void txt_largo_terrenoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_largo_terrenoKeyTyped
         char c = evt.getKeyChar();
         if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
@@ -1498,71 +1299,55 @@ public class InformacionVivienda extends javax.swing.JFrame {
         if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
     }//GEN-LAST:event_txt_ancho_terrenoKeyTyped
 
-    private void txt_local_comercialKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_local_comercialKeyTyped
-        char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
-    }//GEN-LAST:event_txt_local_comercialKeyTyped
-
-    private void txt_sala_de_estarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_sala_de_estarKeyTyped
-        char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
-    }//GEN-LAST:event_txt_sala_de_estarKeyTyped
-
-    private void txt_comedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_comedorKeyTyped
-        char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
-    }//GEN-LAST:event_txt_comedorKeyTyped
-
-    private void txt_hab_matrimonialKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_hab_matrimonialKeyTyped
-        char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
-    }//GEN-LAST:event_txt_hab_matrimonialKeyTyped
-
-    private void txt_hab_dobleKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_hab_dobleKeyTyped
-        char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
-    }//GEN-LAST:event_txt_hab_dobleKeyTyped
-
-    private void txt_hab_simpleKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_hab_simpleKeyTyped
-        char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
-    }//GEN-LAST:event_txt_hab_simpleKeyTyped
-
-    private void txt_sala_de_estudioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_sala_de_estudioKeyTyped
-        char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
-    }//GEN-LAST:event_txt_sala_de_estudioKeyTyped
-
-    private void txt_depositoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_depositoKeyTyped
-        char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
-    }//GEN-LAST:event_txt_depositoKeyTyped
-
-    private void txt_tallerKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_tallerKeyTyped
-        char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();       //Solo se permite escribir numeros.
-    }//GEN-LAST:event_txt_tallerKeyTyped
-
-    private void txt_cubiertaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_cubiertaKeyTyped
-        char c = evt.getKeyChar();
-        if(c!='1' && c!='2' && c!='3') evt.consume();       //Solo se permite escribir esos tres numeros.
-    }//GEN-LAST:event_txt_cubiertaKeyTyped
-
-    private void txt_pisoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_pisoKeyTyped
-        char c = evt.getKeyChar();
-        if(c!='1' && c!='2') evt.consume();       //Solo se permite escribir esos dos numeros.
-    }//GEN-LAST:event_txt_pisoKeyTyped
-
-    private void txt_terminacionKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_terminacionKeyTyped
-        char c = evt.getKeyChar();
-        if(c!='1' && c!='2') evt.consume();       //Solo se permite escribir esos dos numeros.
-    }//GEN-LAST:event_txt_terminacionKeyTyped
-
     //Si quiero hacer algo al cerrar la ventana con la cruz roja.
     //Desde "Design", haciendo clic derecho en JFrame - Events - Window - WindowClosign
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
 
     }//GEN-LAST:event_formWindowClosing
+
+    private void cb_cubiertaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_cubiertaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_cubiertaActionPerformed
+
+    private void cb_local_comercialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_local_comercialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_local_comercialActionPerformed
+
+    private void cb_comedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_comedorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_comedorActionPerformed
+
+    private void cb_hab_matrimonialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_hab_matrimonialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_hab_matrimonialActionPerformed
+
+    private void cb_hab_simpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_hab_simpleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_hab_simpleActionPerformed
+
+    private void cb_depositoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_depositoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_depositoActionPerformed
+
+    private void cb_tallerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_tallerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_tallerActionPerformed
+
+    private void cb_sala_estudioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_sala_estudioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_sala_estudioActionPerformed
+
+    private void cb_hab_dobleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_hab_dobleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_hab_dobleActionPerformed
+
+    private void cb_baño_lav_cocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_baño_lav_cocActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_baño_lav_cocActionPerformed
+
+    private void cb_sala_estarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_sala_estarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_sala_estarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1600,6 +1385,20 @@ public class InformacionVivienda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> cb_baño_lav_coc;
+    private javax.swing.JComboBox<String> cb_comedor;
+    private javax.swing.JComboBox<String> cb_cubierta;
+    private javax.swing.JComboBox<String> cb_deposito;
+    private javax.swing.JComboBox<String> cb_hab_doble;
+    private javax.swing.JComboBox<String> cb_hab_matrimonial;
+    private javax.swing.JComboBox<String> cb_hab_simple;
+    private javax.swing.JComboBox<String> cb_local_comercial;
+    private javax.swing.JComboBox<String> cb_orientacion;
+    private javax.swing.JComboBox<String> cb_piso;
+    private javax.swing.JComboBox<String> cb_sala_estar;
+    private javax.swing.JComboBox<String> cb_sala_estudio;
+    private javax.swing.JComboBox<String> cb_taller;
+    private javax.swing.JComboBox<String> cb_terminacion;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton_actualizarVivienda;
     private javax.swing.JButton jButton_crearDiseño;
@@ -1608,7 +1407,6 @@ public class InformacionVivienda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_ancho;
     private javax.swing.JLabel jLabel_baño_lav_coc;
     private javax.swing.JLabel jLabel_comedor;
-    private javax.swing.JLabel jLabel_cub;
     private javax.swing.JLabel jLabel_cubierta;
     private javax.swing.JLabel jLabel_deposito;
     private javax.swing.JLabel jLabel_hab_doble;
@@ -1618,33 +1416,15 @@ public class InformacionVivienda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_largo;
     private javax.swing.JLabel jLabel_local_comercial;
     private javax.swing.JLabel jLabel_orientacion;
-    private javax.swing.JLabel jLabel_orientacion1;
-    private javax.swing.JLabel jLabel_orientacion2;
-    private javax.swing.JLabel jLabel_pi;
     private javax.swing.JLabel jLabel_piso;
     private javax.swing.JLabel jLabel_sala_de_estar;
     private javax.swing.JLabel jLabel_sala_de_estudio;
     private javax.swing.JLabel jLabel_taller;
-    private javax.swing.JLabel jLabel_term;
     private javax.swing.JLabel jLabel_terminacion;
     private javax.swing.JLabel jLabel_titulo;
     private javax.swing.JLabel jLabel_titulo1;
     private javax.swing.JTextField txt_ancho_terreno;
-    private javax.swing.JTextField txt_baño_lav_coc;
-    private javax.swing.JTextField txt_comedor;
-    private javax.swing.JTextField txt_cubierta;
-    private javax.swing.JTextField txt_deposito;
-    private javax.swing.JTextField txt_hab_doble;
-    private javax.swing.JTextField txt_hab_matrimonial;
-    private javax.swing.JTextField txt_hab_simple;
     private javax.swing.JTextField txt_largo_terreno;
-    private javax.swing.JTextField txt_local_comercial;
-    private javax.swing.JTextField txt_orientacion;
-    private javax.swing.JTextField txt_piso;
-    private javax.swing.JTextField txt_sala_de_estar;
-    private javax.swing.JTextField txt_sala_de_estudio;
-    private javax.swing.JTextField txt_taller;
-    private javax.swing.JTextField txt_terminacion;
     // End of variables declaration//GEN-END:variables
 
     public void generar_ventana(){
@@ -1802,22 +1582,22 @@ public class InformacionVivienda extends javax.swing.JFrame {
                 largo_ocupado = Float.toString(validacion_largo);
                 
                 //Completo campos de la pantalla con la información obtenida de la base de datos:
-                txt_orientacion.setText(orientacion);
+                cb_orientacion.setSelectedItem(orientacion);
                 txt_largo_terreno.setText(largo_terreno);
                 txt_ancho_terreno.setText(ancho_terreno);
-                txt_cubierta.setText(cubierta);
-                txt_piso.setText(piso);
-                txt_terminacion.setText(terminacion);
-                txt_local_comercial.setText(local_comercial);
-                txt_sala_de_estar.setText(sala_de_estar);
-                txt_comedor.setText(comedor);
-                txt_baño_lav_coc.setText(baño_lav_coc);
-                txt_hab_matrimonial.setText(hab_matrimonial);
-                txt_hab_doble.setText(hab_doble);
-                txt_hab_simple.setText(hab_simple);
-                txt_sala_de_estudio.setText(sala_de_estudio);
-                txt_deposito.setText(deposito);
-                txt_taller.setText(taller);
+                cb_cubierta.setSelectedIndex(Integer.parseInt(cubierta)-1);
+                cb_piso.setSelectedIndex(Integer.parseInt(piso)-1);
+                cb_terminacion.setSelectedIndex(Integer.parseInt(terminacion)-1);
+                cb_local_comercial.setSelectedItem(local_comercial);
+                cb_sala_estar.setSelectedItem(sala_de_estar);
+                cb_comedor.setSelectedItem(comedor);
+                cb_baño_lav_coc.setSelectedItem(baño_lav_coc);
+                cb_hab_matrimonial.setSelectedItem(hab_matrimonial);
+                cb_hab_doble.setSelectedItem(hab_doble);
+                cb_hab_simple.setSelectedItem(hab_simple);
+                cb_sala_estudio.setSelectedItem(sala_de_estudio);
+                cb_deposito.setSelectedItem(deposito);
+                cb_taller.setSelectedItem(taller);
             }
             cn.close();   //Cierro la conexión.
             
@@ -1830,23 +1610,8 @@ public class InformacionVivienda extends javax.swing.JFrame {
     }
     
     public void Limpiar(){
-        txt_orientacion.setText("");
         txt_largo_terreno.setText("");
         txt_ancho_terreno.setText("");
-        txt_cubierta.setText("");
-        txt_piso.setText("");
-        txt_terminacion.setText("");
-        txt_local_comercial.setText("");
-        txt_sala_de_estar.setText("");
-        txt_comedor.setText("");
-        txt_baño_lav_coc.setText("");
-        txt_hab_matrimonial.setText("");
-        txt_hab_doble.setText("");
-        txt_hab_simple.setText("");
-        txt_sala_de_estudio.setText("");
-        txt_deposito.setText("");
-        txt_taller.setText("");
        }
-    
     
 }
